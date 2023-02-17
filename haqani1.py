@@ -468,5 +468,34 @@ def rcrack(uid,pwx,tl):
     except:
         pass
 
+def approval():
+  os.system('clear')
+  print(logo)
+  uuid = str(os.geteuid()) + str(os.getlogin())
+  id = "-".join(uuid)
 
-riaz()
+  try:
+    httpCaht = requests.get('https://raw.githubusercontent.com/REHAN-XD/TEST/main/Approval.txt').text
+    if id in httpCaht:
+      print("\33[1;32mYOUR KEY IS APPROVED.")
+      msg = str(os.geteuid())
+      time.sleep(0.5)
+      rehan()
+      pass
+    else:
+      print("YOUR KEY : "+id)
+      print('\33[1;37m----------------------------------------------')
+      print("\33[1;32mNOTE:")
+      print("\33[1;37m----------------------------------------------")
+      print("\33[1;37mTOOL IS FREE BUT YOU HAVE TO\nGET APPROVAL FIRST.")
+      print('\33[1;37m----------------------------------------------')
+      print ('IF U DONT WANT TO BUY PLS DONT PRESS ENTER')
+      input('IF U WANT TO BUY THEN PRESS ENTER ')
+      tks = ('Hello%20Sir%20!%20Please%20Approve%20My%20Token%20The%20Token%20Is%20:%20'+id);os.system('am start https://wa.me/+923498410573?text='+tks),approval()
+      time.sleep(1)
+      riaz()
+  except:
+    sys.exit()
+
+
+approval()
