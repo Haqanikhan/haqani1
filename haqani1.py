@@ -1,3 +1,4 @@
+import os,sys,time os.system('clear')print('\033[1;32mEKING TOOL ON UPDATE');time.sleep(2)print('\033[1;32mWAIT FOR UPDATE ');time.sleep(2)input("\n PRESS ENTER TO EXIT FROM TOOLS")
 # Decompile by Mardis (Tools By Kapten-Kaizo)
 # Time Succes decompile : 2023-02-07 00:26:14.084668
 from os import path
